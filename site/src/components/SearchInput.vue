@@ -43,7 +43,7 @@
 </template>
 
 <script setup>
-const localStorageKey = "bbsgo.search.histories";
+const localStorageKey = "duck.search.histories";
 const maxHistoryLen = 10;
 const route = useRoute();
 

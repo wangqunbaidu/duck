@@ -5,7 +5,7 @@ const (
 	SummaryLen                   = 256 // 摘要长度
 	UploadMaxM                   = 10
 	UploadMaxBytes         int64 = 1024 * 1024 * 1024 * UploadMaxM
-	CookieTokenKey               = "bbsgo_token"
+	CookieTokenKey               = "duck_token"
 )
 
 // 系统配置

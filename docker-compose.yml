@@ -4,8 +4,8 @@ services:
     image: 'mysql:8.0'
     environment:
       TZ: Asia/hangzhou
-      MYSQL_DATABASE: bbsgo_db
-      MYSQL_USER: bbsgo
+      MYSQL_DATABASE: duck_db
+      MYSQL_USER: duck
       MYSQL_PASSWORD: 123456
       MYSQL_ROOT_PASSWORD: 123456
     volumes:
@@ -13,13 +13,13 @@ services:
       - .docker-compose/mysql/data:/var/lib/mysql # 挂载数据件目录；如果非root账号执行，挂载目录必须是登录账号下目录
     restart: always
     healthcheck:
-      test: '/usr/bin/mysql --user=bbsgo --password=123456 bbsgo_db --execute "SHOW TABLES;"'
+      test: '/usr/bin/mysql --user=duck --password=123456 duck_db --execute "SHOW TABLES;"'
       interval: 3s
       timeout: 300s
       retries: 100
     command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
 
-  bbsgo:
+  duck:
     container_name: duck
     image: mlogclub/duck:4.0.3
     depends_on:
@@ -31,9 +31,9 @@ services:
     volumes:
       - /data/docker:/data
     environment:
-      BBSGO_ENV: docker
-      BBSGO_DB_URL: root:123456@tcp(duck-mysql:3306)/bbsgo_db?charset=utf8mb4&parseTime=True&multiStatements=true&loc=Local
-      BBSGO_BASEURL: 
+      duck_ENV: docker
+      duck_DB_URL: root:123456@tcp(duck-mysql:3306)/duck_db?charset=utf8mb4&parseTime=True&multiStatements=true&loc=Local
+      duck_BASEURL: 
     ports:
       - 8082:8082
       - 3000:3000

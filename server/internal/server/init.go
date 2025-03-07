@@ -34,7 +34,7 @@ func Init() {
 }
 
 func initConfig() {
-	env := os.Getenv("BBSGO_ENV")
+	env := os.Getenv("duck_ENV")
 	if strs.IsBlank(env) {
 		env = "dev"
 	}
@@ -45,7 +45,7 @@ func initConfig() {
 	viper.AddConfigPath(".")
 	viper.AddConfigPath("../../")
 	viper.AutomaticEnv()
-	viper.SetEnvPrefix("BBSGO")
+	viper.SetEnvPrefix("duck")
 	viper.SetEnvKeyReplacer(strings.NewReplacer(".", "_"))
 
 	if err := viper.ReadInConfig(); err != nil {
