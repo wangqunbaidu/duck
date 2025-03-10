@@ -28,6 +28,7 @@
     "@pinia/nuxt": "0.5.1",
     "animate.css": "4.1.1",
     "md-editor-v3": "4.17.3",
-    "nuxt-lazy-load": "3.0.4"
+    "nuxt-lazy-load": "3.0.4",
+    "pinia": "^3.0.1"
   }
 }

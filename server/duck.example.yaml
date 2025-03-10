@@ -1,5 +1,5 @@
 Port: 8082 # 端口
-BaseUrl: https://mlog.club # 网站域名
+BaseUrl: http://8.154.24.241 # 网站域名
 IpDataPath: # IP数据文件，默认读取当前目录下ip2region.xdb文件，最新数据文件请从这里下载：https://github.com/lionsoul2014/ip2region/tree/master/data
 AllowedOrigins:
   - "*"
@@ -36,7 +36,7 @@ Uploader:
     StyleDetail:       # 详情图片样式名称
   # 本地文件上传
   Local:
-    Host: https://st.mlog.club/  # 上传文件域名
+    Host: http://8.154.24.241:3000  # 上传文件域名
     Path: /data/www/st.mlog.club # 上传目录
 
 # 邮件服务器配置，用于邮件通知

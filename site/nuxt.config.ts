@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   srcDir: 'src/',
 
-  // ssr: false,
+   ssr: false,
   modules: [
     '@pinia/nuxt',
     '@vueuse/nuxt',
@@ -29,9 +29,12 @@ export default defineNuxtConfig({
       observerConfig: {
         // See IntersectionObserver documentation
       },
+      
     }],
   ],
-
+  // build: {
+  //   transpile: ['pinia'],
+  // },
   plugins: [
   ],
 
@@ -83,5 +86,5 @@ export default defineNuxtConfig({
     },
   },
 
-  compatibilityDate: '2024-09-15',
+  compatibilityDate: '2025-09-15',
 })
