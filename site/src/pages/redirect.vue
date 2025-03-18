@@ -8,7 +8,7 @@
             :src="configStore.config.siteLogo"
             style="max-width: 100px"
           />
-          <img v-else src="~/assets/images/logo.jpg" style="max-width: 100px" />
+          <img v-else src="~/assets/images/logo.png" style="max-width: 100px" />
         </div>
         <div style="margin: 20px 0">
           <a :href="url" rel="nofollow">点击该链接继续跳转&nbsp;&gt;&gt;</a>

@@ -9,7 +9,7 @@
       </div>
       <div>
         © 2022 Powered by
-        <a href="https://duck.com" target="_blank" class="light">duck</a>
+        <a href="" target="_blank" class="light">duck</a>
       </div>
     </div>
   </footer>
@@ -28,7 +28,7 @@
   }
 
   .light {
-    color: #eb5424; // TODO
+    color: hsl(220, 83%, 53%); // TODO
     font-weight: bold;
   }
 }

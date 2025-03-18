@@ -7,7 +7,7 @@
         </div>
         <div class="topics-main">
           <div class="topics-main-header">
-            <div>全部帖子</div>
+            <div>全部内容</div>
             <div></div>
           </div>
           <load-more-async

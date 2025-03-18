@@ -12,7 +12,7 @@
             :alt="config.siteTitle"
             :src="config.siteLogo"
           />
-          <img v-else :alt="config.siteTitle" src="~/assets/images/logo.jpg" />
+          <img v-else :alt="config.siteTitle" src="~/assets/images/logo.png" />
         </nuxt-link>
         <a
           :class="{ 'is-active': navbarActive }"
@@ -87,9 +87,9 @@
               </nuxt-link>
             </div>
           </div>
-          <div class="navbar-item">
+          <!-- <div class="navbar-item">
             <color-mode />
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

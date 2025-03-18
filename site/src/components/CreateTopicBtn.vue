@@ -25,17 +25,22 @@ const modules = ref([
   {
     command: "tweet",
     name: "发动态",
-    icon: "iconfont icon-tweet2",
+    // icon: "iconfont icon-tweet2",
   },
   {
     command: "topic",
     name: "发帖子",
-    icon: "iconfont icon-topic",
+    // icon: "iconfont icon-topic",
   },
   {
     command: "article",
     name: "发文章",
-    icon: "iconfont icon-article",
+    // icon: "iconfont icon-article",
+  },
+  {
+    command: "article",
+    name: "发视频",
+    // icon: "iconfont icon-video",
   },
 ]);
 
@@ -51,4 +56,10 @@ function handlePostCommand(cmd) {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.el-dropdown button {
+  cursor: pointer;
+  background-color: black;
+  border-color: white;
+}
+</style>

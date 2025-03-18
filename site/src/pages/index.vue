@@ -7,9 +7,10 @@
         </div>
         <div class="topics-main">
           <div class="topics-main-header">
-            <div>全部帖子</div>
+            <div>为你推荐</div>
             <div></div>
           </div>
+          
           <load-more-async v-slot="{ results }" url="/api/topic/topics">
             <topic-list :topics="results" show-sticky />
           </load-more-async>

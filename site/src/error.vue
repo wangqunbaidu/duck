@@ -39,7 +39,7 @@ const handleError = () => {
             />
             <img
               v-else
-              src="~/assets/images/logo.jpg"
+              src="~/assets/images/logo.png"
               style="max-width: 100px"
             />
           </div>
