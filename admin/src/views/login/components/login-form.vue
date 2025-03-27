@@ -103,7 +103,7 @@
   }
 
   const refreshCaptcha = async () => {
-    const { captchaId, captchaUrl } = await axios.get<any, User>(
+    const { captchaId, captchaBase64 } = await axios.get<any, User>(
       '/api/captcha/request',
       {
         params: {
@@ -112,7 +112,7 @@
       }
     );
     form.captchaId = captchaId;
-    form.captchaUrl = captchaUrl;
+    form.captchaUrl = `data:image/jpeg;base64, ${captchaBase64}`;
     form.captchaCode = '';
   };
 

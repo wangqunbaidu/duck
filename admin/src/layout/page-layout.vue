@@ -18,7 +18,6 @@
   import { useTabBarStore } from '@/store';
 
   const tabBarStore = useTabBarStore();
-
   const cacheList = computed(() => tabBarStore.getCacheList);
 </script>
 

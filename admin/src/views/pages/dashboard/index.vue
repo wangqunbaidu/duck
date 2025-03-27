@@ -26,32 +26,32 @@
     <a-card v-if="systemInfo" title="开发团队信息">
       <div class="attr">
         <span class="attr-name">Official Site:&nbsp;</span>
-        <a class="attr-value" href="https://mlog.club" target="_blank"
-          >https://mlog.club</a
+        <a class="attr-value" href="/" target="_blank"
+          >我们的用户端</a
         >
       </div>
       <div class="attr">
         <span class="attr-name">Dev Team:&nbsp;</span>
-        <a class="attr-value" href="https://github.com/mlogclub" target="_blank"
-          >码农俱乐部</a
+        <a class="attr-value" href="" target="_blank"
+          >不想当牛马</a
         >
       </div>
       <div class="attr">
         <span class="attr-name">Github:&nbsp;</span>
         <a
           class="attr-value"
-          href="https://github.com/mlogclub/duck"
+          href=""
           target="_blank"
-          >https://github.com/mlogclub/duck</a
+          >代码地址</a
         >
       </div>
       <div class="attr">
         <span class="attr-name">Gitee:&nbsp;</span>
         <a
           class="attr-value"
-          href="https://gitee.com/mlogclub/duck"
+          href=""
           target="_blank"
-          >https://gitee.com/mlogclub/duck</a
+          >云管理地址</a
         >
       </div>
     </a-card>

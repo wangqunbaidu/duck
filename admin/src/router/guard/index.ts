@@ -11,6 +11,7 @@ function setupPageGuard(router: Router) {
 }
 
 export default function createRouteGuard(router: Router) {
+  console.log('router guard setup');
   setupPageGuard(router);
   setupUserLoginInfoGuard(router);
   setupPermissionGuard(router);

@@ -3,9 +3,9 @@
     <div class="logo">
       <img
         alt="logo"
-        src="//p3-armor.byteimg.com/tos-cn-i-49unhts6dw/dfdba5317c0c20ce20e64fac803d52bc.svg~tplv-49unhts6dw-image.image"
+        :src="adminLogo" width="40"
       />
-      <div class="logo-text">duck</div>
+      <div class="logo-text">管理系统</div>
     </div>
     <LoginBanner />
     <div class="content">
@@ -22,15 +22,17 @@
 </template>
 
 <script lang="ts" setup>
+  import logo2 from '@/assets/images/logo.png';
   import Footer from '@/components/footer/index.vue';
   import { DEFAULT_ROUTE_NAME } from '@/router/constants';
   import LoginBanner from './components/banner.vue';
   import LoginForm from './components/login-form.vue';
+  
 
   const userStore = useUserStore();
   const router = useRouter();
   const loading = ref(true);
-
+  const adminLogo = logo2;
   onMounted(async () => {
     try {
       const user = await userStore.info();
@@ -45,6 +47,7 @@
       }
     } finally {
       loading.value = false;
+      // adminLogo.value = logo;
     }
   });
 </script>
