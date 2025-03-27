@@ -7,8 +7,8 @@ import (
 	"github.com/mlogclub/simple/web"
 	"github.com/mlogclub/simple/web/params"
 
-	"duck/internal/controllers/render"
-	"duck/internal/services"
+	"bbs-go/internal/controllers/render"
+	"bbs-go/internal/services"
 )
 
 type UserScoreLogController struct {

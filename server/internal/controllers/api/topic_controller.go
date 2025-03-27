@@ -1,11 +1,11 @@
 package api
 
 import (
-	"duck/internal/models/constants"
-	"duck/internal/pkg/common"
-	"duck/internal/pkg/errs"
-	"duck/internal/pkg/markdown"
-	"duck/internal/spam"
+	"bbs-go/internal/models/constants"
+	"bbs-go/internal/pkg/common"
+	"bbs-go/internal/pkg/errs"
+	"bbs-go/internal/pkg/markdown"
+	"bbs-go/internal/spam"
 	"math/rand"
 	"strconv"
 	"strings"
@@ -16,10 +16,10 @@ import (
 	"github.com/mlogclub/simple/web"
 	"github.com/mlogclub/simple/web/params"
 
-	"duck/internal/cache"
-	"duck/internal/controllers/render"
-	"duck/internal/models"
-	"duck/internal/services"
+	"bbs-go/internal/cache"
+	"bbs-go/internal/controllers/render"
+	"bbs-go/internal/models"
+	"bbs-go/internal/services"
 )
 
 type TopicController struct {
@@ -65,8 +65,8 @@ func (c *TopicController) PostCreate() *web.JsonResult {
 	if err := services.UserService.CheckPostStatus(user); err != nil {
 		return web.JsonError(err)
 	}
-	form := models.GetCreateTopicForm(c.Ctx)
 
+	form := models.GetCreateTopicForm(c.Ctx)
 	if err := spam.CheckTopic(user, form); err != nil {
 		return web.JsonError(err)
 	}

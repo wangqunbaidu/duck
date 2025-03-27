@@ -1,8 +1,8 @@
 package render
 
 import (
-	"duck/internal/pkg/config"
-	"duck/internal/pkg/uploader"
+	"bbs-go/internal/pkg/config"
+	"bbs-go/internal/pkg/uploader"
 	"strings"
 
 	"github.com/mlogclub/simple/common/strs"

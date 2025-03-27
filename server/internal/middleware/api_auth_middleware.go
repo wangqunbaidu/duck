@@ -1,10 +1,10 @@
 package middleware
 
 import (
-	"duck/internal/models/constants"
-	"duck/internal/pkg/errs"
-	"duck/internal/pkg/urls"
-	"duck/internal/services"
+	"bbs-go/internal/models/constants"
+	"bbs-go/internal/pkg/errs"
+	"bbs-go/internal/pkg/urls"
+	"bbs-go/internal/services"
 
 	"github.com/kataras/iris/v12"
 	"github.com/mlogclub/simple/web"

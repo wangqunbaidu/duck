@@ -1,8 +1,9 @@
 package email
 
 import (
-	"duck/internal/models"
-	"duck/internal/pkg/bbsurls"
+	"bbs-go/internal/models"
+	"bbs-go/internal/models/dto"
+	"bbs-go/internal/pkg/bbsurls"
 	"bytes"
 	"crypto/tls"
 	"html/template"
@@ -12,7 +13,7 @@ import (
 
 	"github.com/jordan-wright/email"
 
-	"duck/internal/pkg/config"
+	"bbs-go/internal/pkg/config"
 )
 
 var emailTemplate = `
@@ -42,14 +43,14 @@ var emailTemplate = `
 `
 
 // SendTemplateEmail 发送模版邮件
-func SendTemplateEmail(from *models.User, to, subject, title, content, quote string, link *models.ActionLink) error {
+func SendTemplateEmail(from *models.User, to, subject, title, content, quote string, link *dto.ActionLink) error {
 	tpl, err := template.New("emailTemplate").Parse(emailTemplate)
 	if err != nil {
 		return err
 	}
-	var fromLink *models.ActionLink
+	var fromLink *dto.ActionLink
 	if from != nil {
-		fromLink = &models.ActionLink{
+		fromLink = &dto.ActionLink{
 			Title: from.Nickname,
 			Url:   bbsurls.UserUrl(from.Id),
 		}

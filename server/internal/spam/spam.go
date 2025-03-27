@@ -1,7 +1,7 @@
 package spam
 
 import (
-	"duck/internal/models"
+	"bbs-go/internal/models"
 	"log/slog"
 )
 

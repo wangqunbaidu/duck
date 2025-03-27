@@ -1,20 +1,19 @@
 package services
 
 import (
-	"duck/internal/models/constants"
-	"duck/internal/pkg/errs"
+	"bbs-go/internal/models/constants"
+	"bbs-go/internal/pkg/errs"
 	"strings"
 	"time"
 
-	"duck/internal/cache"
-	"duck/internal/models"
-	"duck/internal/repositories"
+	"bbs-go/internal/cache"
+	"bbs-go/internal/models"
+	"bbs-go/internal/repositories"
 
 	"github.com/kataras/iris/v12"
 	"github.com/mlogclub/simple/common/dates"
 	"github.com/mlogclub/simple/common/strs"
 	"github.com/mlogclub/simple/sqls"
-	"github.com/mlogclub/simple/web"
 )
 
 var UserTokenService = newUserTokenService()
@@ -52,7 +51,7 @@ func (s *userTokenService) GetCurrent(ctx iris.Context) *models.User {
 	return user
 }
 
-func (s *userTokenService) CheckLogin(ctx iris.Context) (*models.User, *web.CodeError) {
+func (s *userTokenService) CheckLogin(ctx iris.Context) (*models.User, error) {
 	user := s.GetCurrent(ctx)
 	if user == nil {
 		return nil, errs.NotLogin

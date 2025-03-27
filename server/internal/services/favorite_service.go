@@ -1,16 +1,16 @@
 package services
 
 import (
-	"duck/internal/models/constants"
-	"duck/internal/pkg/event"
+	"bbs-go/internal/models/constants"
+	"bbs-go/internal/pkg/event"
 	"errors"
 
 	"github.com/mlogclub/simple/common/dates"
 	"github.com/mlogclub/simple/sqls"
 	"github.com/mlogclub/simple/web/params"
 
-	"duck/internal/models"
-	"duck/internal/repositories"
+	"bbs-go/internal/models"
+	"bbs-go/internal/repositories"
 )
 
 var FavoriteService = newFavoriteService()

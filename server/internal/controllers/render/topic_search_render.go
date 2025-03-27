@@ -1,9 +1,9 @@
 package render
 
 import (
-	"duck/internal/models"
-	"duck/internal/pkg/search"
-	"duck/internal/services"
+	"bbs-go/internal/models"
+	"bbs-go/internal/pkg/search"
+	"bbs-go/internal/services"
 )
 
 func BuildSearchTopics(docs []search.TopicDocument) []models.SearchTopicResponse {

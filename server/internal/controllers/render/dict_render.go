@@ -1,6 +1,6 @@
 package render
 
-import "duck/internal/models"
+import "bbs-go/internal/models"
 
 func BuildDict(element models.Dict) models.DictResponse {
 	item := models.DictResponse{

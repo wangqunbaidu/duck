@@ -1,8 +1,8 @@
 package main
 
 import (
-	"duck/internal/server"
-	_ "duck/internal/services/eventhandler"
+	"bbs-go/internal/server"
+	_ "bbs-go/internal/services/eventhandler"
 )
 
 func main() {

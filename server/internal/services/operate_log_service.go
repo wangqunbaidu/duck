@@ -1,9 +1,9 @@
 package services
 
 import (
-	"duck/internal/models"
-	"duck/internal/pkg/common"
-	"duck/internal/repositories"
+	"bbs-go/internal/models"
+	"bbs-go/internal/pkg/common"
+	"bbs-go/internal/repositories"
 	"log/slog"
 	"net/http"
 

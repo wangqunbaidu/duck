@@ -7,7 +7,7 @@ import (
 	"github.com/goburrow/cache"
 	"github.com/mlogclub/simple/sqls"
 
-	"duck/internal/repositories"
+	"bbs-go/internal/repositories"
 )
 
 type articleTagCache struct {

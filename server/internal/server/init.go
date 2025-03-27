@@ -1,11 +1,11 @@
 package server
 
 import (
-	"duck/internal/models"
-	"duck/internal/pkg/config"
-	"duck/internal/pkg/iplocator"
-	"duck/internal/pkg/search"
-	"duck/internal/scheduler"
+	"bbs-go/internal/models"
+	"bbs-go/internal/pkg/config"
+	"bbs-go/internal/pkg/iplocator"
+	"bbs-go/internal/pkg/search"
+	"bbs-go/internal/scheduler"
 	"fmt"
 	"log/slog"
 	"os"
@@ -28,24 +28,22 @@ func Init() {
 	initConfig()
 	initLogger()
 	initDB()
-	initCron()
-	initIpLocator()
-	initSearch()
+	initOthers()
 }
 
 func initConfig() {
-	env := os.Getenv("duck_ENV")
+	env := os.Getenv("BBSGO_ENV")
 	if strs.IsBlank(env) {
 		env = "dev"
 	}
 
-	viper.SetConfigName("duck." + env)
+	viper.SetConfigName("bbs-go." + env)
 	viper.SetConfigType("yaml")
-	viper.AddConfigPath("$HOME/.duck")
+	viper.AddConfigPath("$HOME/.bbs-go")
 	viper.AddConfigPath(".")
 	viper.AddConfigPath("../../")
 	viper.AutomaticEnv()
-	viper.SetEnvPrefix("duck")
+	viper.SetEnvPrefix("BBSGO")
 	viper.SetEnvKeyReplacer(strings.NewReplacer(".", "_"))
 
 	if err := viper.ReadInConfig(); err != nil {
@@ -118,16 +116,12 @@ func runMigrations(db *gorm.DB) error {
 	return nil
 }
 
-func initCron() {
+func initOthers() {
 	if config.Instance.IsProd() {
 		scheduler.Start()
 	}
-}
 
-func initIpLocator() {
-	iplocator.InitIpLocator(config.Instance.IpDataPath)
-}
+	iplocator.InitIpLocator()
 
-func initSearch() {
-	search.Init(config.Instance.Search.IndexPath)
+	search.Init()
 }

@@ -1,9 +1,9 @@
 package admin
 
 import (
-	"duck/internal/models"
-	"duck/internal/models/constants"
-	"duck/internal/services"
+	"bbs-go/internal/models"
+	"bbs-go/internal/models/constants"
+	"bbs-go/internal/services"
 	"strconv"
 
 	"github.com/kataras/iris/v12"

@@ -1,10 +1,10 @@
 package eventhandler
 
 import (
-	"duck/internal/models/constants"
-	"duck/internal/pkg/event"
-	"duck/internal/pkg/msg"
-	"duck/internal/services"
+	"bbs-go/internal/models/constants"
+	"bbs-go/internal/pkg/event"
+	"bbs-go/internal/pkg/msg"
+	"bbs-go/internal/services"
 	"reflect"
 )
 

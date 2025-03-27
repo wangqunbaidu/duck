@@ -1,12 +1,12 @@
 package admin
 
 import (
-	"duck/internal/models"
-	"duck/internal/models/constants"
-	"duck/internal/pkg/markdown"
+	"bbs-go/internal/models"
+	"bbs-go/internal/models/constants"
+	"bbs-go/internal/pkg/markdown"
 	"strconv"
 
-	"duck/internal/controllers/render"
+	"bbs-go/internal/controllers/render"
 
 	"github.com/kataras/iris/v12"
 	"github.com/mlogclub/simple/common/jsons"
@@ -14,7 +14,7 @@ import (
 	"github.com/mlogclub/simple/web"
 	"github.com/mlogclub/simple/web/params"
 
-	"duck/internal/services"
+	"bbs-go/internal/services"
 )
 
 type CommentController struct {

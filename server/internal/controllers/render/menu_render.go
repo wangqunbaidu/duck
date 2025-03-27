@@ -1,6 +1,6 @@
 package render
 
-import "duck/internal/models"
+import "bbs-go/internal/models"
 
 func BuildMenu(element *models.Menu) models.MenuResponse {
 	item := models.MenuResponse{

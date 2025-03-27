@@ -1,10 +1,10 @@
 package api
 
 import (
-	"duck/internal/controllers/render"
-	"duck/internal/models"
-	"duck/internal/pkg/errs"
-	"duck/internal/services"
+	"bbs-go/internal/controllers/render"
+	"bbs-go/internal/models"
+	"bbs-go/internal/pkg/errs"
+	"bbs-go/internal/services"
 	"strconv"
 
 	"github.com/emirpasic/gods/sets/hashset"

@@ -1,11 +1,11 @@
 package api
 
 import (
-	"duck/internal/controllers/render"
-	"duck/internal/models"
-	"duck/internal/models/constants"
-	"duck/internal/pkg/search"
-	"duck/internal/services"
+	"bbs-go/internal/controllers/render"
+	"bbs-go/internal/models"
+	"bbs-go/internal/models/constants"
+	"bbs-go/internal/pkg/search"
+	"bbs-go/internal/services"
 
 	"github.com/kataras/iris/v12"
 	"github.com/mlogclub/simple/web"

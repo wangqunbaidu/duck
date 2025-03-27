@@ -1,10 +1,10 @@
 package render
 
 import (
-	"duck/internal/models"
-	"duck/internal/models/constants"
-	"duck/internal/pkg/markdown"
-	"duck/internal/services"
+	"bbs-go/internal/models"
+	"bbs-go/internal/models/constants"
+	"bbs-go/internal/pkg/markdown"
+	"bbs-go/internal/services"
 	"html"
 
 	"github.com/mlogclub/simple/common/arrays"

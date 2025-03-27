@@ -3,7 +3,7 @@ all: build
 
 build:
 	@echo "Building..."
-	@go build -v -o duck main.go
+	@go build -v -o bbs-go main.go
 
 buildlinux:
 	@echo "Building..."
@@ -21,7 +21,7 @@ test:
 # Clean the binary
 clean:
 	@echo "Cleaning..."
-	@rm -f duck
+	@rm -f bbs-go
 
 generator:
 	@go run cmd/generator/generator.go

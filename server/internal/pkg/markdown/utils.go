@@ -1,7 +1,7 @@
 package markdown
 
 import (
-	"duck/internal/pkg/html"
+	"bbs-go/internal/pkg/html"
 	"sync"
 
 	"github.com/88250/lute"

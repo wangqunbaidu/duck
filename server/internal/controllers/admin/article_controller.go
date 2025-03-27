@@ -1,21 +1,21 @@
 package admin
 
 import (
-	"duck/internal/models/constants"
-	"duck/internal/pkg/sitemap"
+	"bbs-go/internal/models/constants"
+	"bbs-go/internal/pkg/sitemap"
 	"strconv"
 
-	"duck/internal/models"
+	"bbs-go/internal/models"
 
 	"github.com/kataras/iris/v12"
 	"github.com/mlogclub/simple/common/dates"
 	"github.com/mlogclub/simple/web"
 	"github.com/mlogclub/simple/web/params"
 
-	"duck/internal/cache"
-	"duck/internal/controllers/render"
-	"duck/internal/pkg/common"
-	"duck/internal/services"
+	"bbs-go/internal/cache"
+	"bbs-go/internal/controllers/render"
+	"bbs-go/internal/pkg/common"
+	"bbs-go/internal/services"
 )
 
 type ArticleController struct {

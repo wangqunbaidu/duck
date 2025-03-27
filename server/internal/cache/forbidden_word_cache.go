@@ -1,8 +1,8 @@
 package cache
 
 import (
-	"duck/internal/models"
-	"duck/internal/repositories"
+	"bbs-go/internal/models"
+	"bbs-go/internal/repositories"
 	"log/slog"
 	"time"
 

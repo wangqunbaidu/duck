@@ -1,15 +1,15 @@
 package cache
 
 import (
-	"duck/internal/models/constants"
+	"bbs-go/internal/models/constants"
 	"errors"
 	"time"
 
 	"github.com/goburrow/cache"
 	"github.com/mlogclub/simple/sqls"
 
-	"duck/internal/models"
-	"duck/internal/repositories"
+	"bbs-go/internal/models"
+	"bbs-go/internal/repositories"
 )
 
 var (

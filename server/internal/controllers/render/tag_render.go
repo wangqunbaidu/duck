@@ -1,6 +1,6 @@
 package render
 
-import "duck/internal/models"
+import "bbs-go/internal/models"
 
 func BuildTag(tag *models.Tag) *models.TagResponse {
 	if tag == nil {

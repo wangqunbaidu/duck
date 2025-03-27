@@ -1,7 +1,7 @@
 package uploader
 
 import (
-	"duck/internal/pkg/config"
+	"bbs-go/internal/pkg/config"
 	"mime"
 	"time"
 

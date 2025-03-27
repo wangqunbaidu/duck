@@ -1,9 +1,9 @@
 package spam
 
 import (
-	"duck/internal/models"
-	"duck/internal/pkg/errs"
-	"duck/internal/services"
+	"bbs-go/internal/models"
+	"bbs-go/internal/pkg/errs"
+	"bbs-go/internal/services"
 )
 
 type EmailVerifyStrategy struct{}

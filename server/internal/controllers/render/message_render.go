@@ -1,10 +1,10 @@
 package render
 
 import (
-	"duck/internal/models"
-	"duck/internal/models/constants"
-	"duck/internal/pkg/bbsurls"
-	"duck/internal/pkg/msg"
+	"bbs-go/internal/models"
+	"bbs-go/internal/models/constants"
+	"bbs-go/internal/pkg/bbsurls"
+	"bbs-go/internal/pkg/msg"
 
 	"github.com/tidwall/gjson"
 )

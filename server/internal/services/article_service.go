@@ -1,15 +1,15 @@
 package services
 
 import (
-	"duck/internal/models/constants"
-	"duck/internal/pkg/bbsurls"
-	"duck/internal/pkg/seo"
+	"bbs-go/internal/models/constants"
+	"bbs-go/internal/pkg/bbsurls"
+	"bbs-go/internal/pkg/seo"
 	"errors"
 	"math"
 	"strings"
 
-	"duck/internal/cache"
-	"duck/internal/repositories"
+	"bbs-go/internal/cache"
+	"bbs-go/internal/repositories"
 
 	"github.com/mlogclub/simple/common/dates"
 	"github.com/mlogclub/simple/common/jsons"
@@ -20,7 +20,7 @@ import (
 	"github.com/spf13/cast"
 	"gorm.io/gorm"
 
-	"duck/internal/models"
+	"bbs-go/internal/models"
 )
 
 var ArticleService = newArticleService()
@@ -139,6 +139,11 @@ func (s *articleService) GetTagArticles(tagId int64, cursor int64) (articles []m
 
 // 发布文章
 func (s *articleService) Publish(userId int64, form models.CreateArticleForm) (article *models.Article, err error) {
+	modules := SysConfigService.GetModules()
+	if !modules.Article {
+		return nil, errors.New("未开启文章功能")
+	}
+
 	form.Title = strings.TrimSpace(form.Title)
 	form.Summary = strings.TrimSpace(form.Summary)
 	form.Content = strings.TrimSpace(form.Content)

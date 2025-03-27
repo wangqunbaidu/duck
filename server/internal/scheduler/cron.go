@@ -1,7 +1,7 @@
 package scheduler
 
 import (
-	"duck/internal/pkg/sitemap"
+	"bbs-go/internal/pkg/sitemap"
 	"log/slog"
 
 	"github.com/robfig/cron/v3"

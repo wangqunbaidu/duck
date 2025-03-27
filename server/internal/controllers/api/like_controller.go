@@ -1,9 +1,9 @@
 package api
 
 import (
-	"duck/internal/models/constants"
-	"duck/internal/pkg/errs"
-	"duck/internal/services"
+	"bbs-go/internal/models/constants"
+	"bbs-go/internal/pkg/errs"
+	"bbs-go/internal/services"
 
 	"github.com/kataras/iris/v12"
 	"github.com/mlogclub/simple/common/strs"

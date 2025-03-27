@@ -1,10 +1,10 @@
 package render
 
 import (
-	"duck/internal/cache"
-	"duck/internal/models"
-	"duck/internal/models/constants"
-	"duck/internal/pkg/bbsurls"
+	"bbs-go/internal/cache"
+	"bbs-go/internal/models"
+	"bbs-go/internal/models/constants"
+	"bbs-go/internal/pkg/bbsurls"
 	"strconv"
 	"strings"
 

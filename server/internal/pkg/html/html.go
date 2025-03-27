@@ -4,7 +4,7 @@ import (
 	"log/slog"
 	"strings"
 
-	"duck/internal/pkg/text"
+	"bbs-go/internal/pkg/text"
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/mlogclub/simple/common/strs"

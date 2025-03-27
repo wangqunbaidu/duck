@@ -1,16 +1,16 @@
 package common
 
 import (
-	"duck/internal/models/constants"
-	"duck/internal/pkg/html"
-	"duck/internal/pkg/markdown"
-	"duck/internal/pkg/text"
+	"bbs-go/internal/models/constants"
+	"bbs-go/internal/pkg/html"
+	"bbs-go/internal/pkg/markdown"
+	"bbs-go/internal/pkg/text"
 	"net"
 	"net/http"
 	"strings"
 )
 
-func GetSummary(contentType string, content string) (summary string) {
+func GetSummary(contentType constants.ContentType, content string) (summary string) {
 	if contentType == constants.ContentTypeMarkdown {
 		summary = markdown.GetSummary(content, constants.SummaryLen)
 	} else if contentType == constants.ContentTypeHtml {

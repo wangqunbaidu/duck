@@ -1,10 +1,10 @@
 package api
 
 import (
-	"duck/internal/models/constants"
-	"duck/internal/pkg/errs"
-	"duck/internal/pkg/msg"
-	"duck/internal/pkg/validate"
+	"bbs-go/internal/models/constants"
+	"bbs-go/internal/pkg/errs"
+	"bbs-go/internal/pkg/msg"
+	"bbs-go/internal/pkg/validate"
 	"strconv"
 	"strings"
 	"time"
@@ -17,10 +17,10 @@ import (
 	"github.com/mlogclub/simple/web/params"
 	"github.com/spf13/cast"
 
-	"duck/internal/cache"
-	"duck/internal/controllers/render"
-	"duck/internal/models"
-	"duck/internal/services"
+	"bbs-go/internal/cache"
+	"bbs-go/internal/controllers/render"
+	"bbs-go/internal/models"
+	"bbs-go/internal/services"
 )
 
 type UserController struct {
@@ -173,7 +173,7 @@ func (c *UserController) PostUpdateBirthday() *web.JsonResult {
 }
 
 // 设置用户名
-func (c *UserController) PostSetUsername() *web.JsonResult {
+func (c *UserController) PostSet_username() *web.JsonResult {
 	user := services.UserTokenService.GetCurrent(c.Ctx)
 	if user == nil {
 		return web.JsonError(errs.NotLogin)
@@ -187,7 +187,7 @@ func (c *UserController) PostSetUsername() *web.JsonResult {
 }
 
 // 设置邮箱
-func (c *UserController) PostSetEmail() *web.JsonResult {
+func (c *UserController) PostSet_email() *web.JsonResult {
 	user := services.UserTokenService.GetCurrent(c.Ctx)
 	if user == nil {
 		return web.JsonError(errs.NotLogin)
@@ -201,7 +201,7 @@ func (c *UserController) PostSetEmail() *web.JsonResult {
 }
 
 // 设置密码
-func (c *UserController) PostSetPassword() *web.JsonResult {
+func (c *UserController) PostSet_password() *web.JsonResult {
 	user := services.UserTokenService.GetCurrent(c.Ctx)
 	if user == nil {
 		return web.JsonError(errs.NotLogin)
@@ -216,7 +216,7 @@ func (c *UserController) PostSetPassword() *web.JsonResult {
 }
 
 // 修改密码
-func (c *UserController) PostUpdatePassword() *web.JsonResult {
+func (c *UserController) PostUpdate_password() *web.JsonResult {
 	user := services.UserTokenService.GetCurrent(c.Ctx)
 	if user == nil {
 		return web.JsonError(errs.NotLogin)

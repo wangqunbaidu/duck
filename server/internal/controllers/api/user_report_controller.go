@@ -1,8 +1,8 @@
 package api
 
 import (
-	"duck/internal/models"
-	"duck/internal/services"
+	"bbs-go/internal/models"
+	"bbs-go/internal/services"
 
 	"github.com/kataras/iris/v12"
 	"github.com/mlogclub/simple/common/dates"

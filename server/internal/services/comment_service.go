@@ -1,9 +1,9 @@
 package services
 
 import (
-	"duck/internal/models/constants"
-	"duck/internal/pkg/event"
-	"duck/internal/pkg/iplocator"
+	"bbs-go/internal/models/constants"
+	"bbs-go/internal/pkg/event"
+	"bbs-go/internal/pkg/iplocator"
 	"errors"
 	"log/slog"
 	"strings"
@@ -17,8 +17,8 @@ import (
 	"github.com/spf13/cast"
 	"gorm.io/gorm"
 
-	"duck/internal/models"
-	"duck/internal/repositories"
+	"bbs-go/internal/models"
+	"bbs-go/internal/repositories"
 )
 
 var CommentService = newCommentService()

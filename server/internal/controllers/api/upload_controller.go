@@ -1,8 +1,8 @@
 package api
 
 import (
-	"duck/internal/models/constants"
-	"duck/internal/pkg/uploader"
+	"bbs-go/internal/models/constants"
+	"bbs-go/internal/pkg/uploader"
 	"io"
 	"log/slog"
 	"strconv"
@@ -10,7 +10,7 @@ import (
 	"github.com/kataras/iris/v12"
 	"github.com/mlogclub/simple/web"
 
-	"duck/internal/services"
+	"bbs-go/internal/services"
 )
 
 type UploadController struct {

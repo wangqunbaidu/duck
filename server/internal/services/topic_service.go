@@ -1,9 +1,9 @@
 package services
 
 import (
-	"duck/internal/models/constants"
-	"duck/internal/pkg/event"
-	"duck/internal/pkg/search"
+	"bbs-go/internal/models/constants"
+	"bbs-go/internal/pkg/event"
+	"bbs-go/internal/pkg/search"
 	"errors"
 	"math"
 	"net/http"
@@ -15,9 +15,9 @@ import (
 
 	"gorm.io/gorm"
 
-	"duck/internal/cache"
-	"duck/internal/models"
-	"duck/internal/repositories"
+	"bbs-go/internal/cache"
+	"bbs-go/internal/models"
+	"bbs-go/internal/repositories"
 )
 
 var TopicService = newTopicService()

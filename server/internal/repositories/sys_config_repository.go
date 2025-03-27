@@ -5,7 +5,7 @@ import (
 	"github.com/mlogclub/simple/web/params"
 	"gorm.io/gorm"
 
-	"duck/internal/models"
+	"bbs-go/internal/models"
 )
 
 var SysConfigRepository = newSysConfigRepository()

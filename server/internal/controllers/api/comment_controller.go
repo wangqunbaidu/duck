@@ -1,9 +1,9 @@
 package api
 
 import (
-	"duck/internal/models"
-	"duck/internal/models/constants"
-	"duck/internal/spam"
+	"bbs-go/internal/models"
+	"bbs-go/internal/models/constants"
+	"bbs-go/internal/spam"
 	"strconv"
 
 	"github.com/kataras/iris/v12"
@@ -13,8 +13,8 @@ import (
 	"github.com/panjf2000/ants/v2"
 	"github.com/sirupsen/logrus"
 
-	"duck/internal/controllers/render"
-	"duck/internal/services"
+	"bbs-go/internal/controllers/render"
+	"bbs-go/internal/services"
 )
 
 type CommentController struct {

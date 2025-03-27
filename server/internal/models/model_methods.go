@@ -1,7 +1,7 @@
 package models
 
 import (
-	"duck/internal/models/constants"
+	"bbs-go/internal/models/constants"
 	"strings"
 	"time"
 

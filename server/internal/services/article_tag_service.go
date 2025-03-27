@@ -1,13 +1,13 @@
 package services
 
 import (
-	"duck/internal/models/constants"
+	"bbs-go/internal/models/constants"
 
 	"github.com/mlogclub/simple/sqls"
 	"github.com/mlogclub/simple/web/params"
 
-	"duck/internal/models"
-	"duck/internal/repositories"
+	"bbs-go/internal/models"
+	"bbs-go/internal/repositories"
 )
 
 var ArticleTagService = newArticleTagService()

@@ -1,7 +1,7 @@
 package uploader
 
 import (
-	"duck/internal/pkg/bbsurls"
+	"bbs-go/internal/pkg/bbsurls"
 	"bytes"
 	"log/slog"
 	"sync"
@@ -10,7 +10,7 @@ import (
 
 	"github.com/aliyun/aliyun-oss-go-sdk/oss"
 
-	"duck/internal/pkg/config"
+	"bbs-go/internal/pkg/config"
 )
 
 // 阿里云oss

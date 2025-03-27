@@ -9,7 +9,7 @@ import (
 
 	"github.com/go-resty/resty/v2"
 
-	"duck/internal/pkg/config"
+	"bbs-go/internal/pkg/config"
 )
 
 func Push(url string) {

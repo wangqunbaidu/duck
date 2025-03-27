@@ -1,15 +1,15 @@
 package services
 
 import (
-	"duck/internal/models/constants"
+	"bbs-go/internal/models/constants"
 	"strings"
 
 	"github.com/mlogclub/simple/sqls"
 	"github.com/mlogclub/simple/web/params"
 
-	"duck/internal/cache"
-	"duck/internal/models"
-	"duck/internal/repositories"
+	"bbs-go/internal/cache"
+	"bbs-go/internal/models"
+	"bbs-go/internal/repositories"
 )
 
 var TagService = newTagService()

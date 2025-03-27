@@ -1,9 +1,9 @@
 package admin
 
 import (
-	"duck/internal/models"
-	"duck/internal/models/dto"
-	"duck/internal/services"
+	"bbs-go/internal/models"
+	"bbs-go/internal/models/dto"
+	"bbs-go/internal/services"
 	"log/slog"
 	"net/http"
 	"strconv"

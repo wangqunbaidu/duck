@@ -7,7 +7,7 @@ import (
 	"github.com/mlogclub/simple/common/strs"
 	"github.com/mlogclub/simple/common/urls"
 
-	"duck/internal/pkg/config"
+	"bbs-go/internal/pkg/config"
 )
 
 type uploader interface {

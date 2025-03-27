@@ -17,6 +17,6 @@ const (
 	userTokenParam  = "_user_token"
 
 	expireSeconds = 3600
-	issuer        = "duck"
+	issuer        = "bbs-go"
 	secret        = ""
 )

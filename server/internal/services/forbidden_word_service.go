@@ -1,10 +1,10 @@
 package services
 
 import (
-	"duck/internal/cache"
-	"duck/internal/models"
-	"duck/internal/models/constants"
-	"duck/internal/repositories"
+	"bbs-go/internal/cache"
+	"bbs-go/internal/models"
+	"bbs-go/internal/models/constants"
+	"bbs-go/internal/repositories"
 	"regexp"
 	"strings"
 

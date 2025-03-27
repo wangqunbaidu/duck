@@ -1,8 +1,8 @@
 package eventhandler
 
 import (
-	"duck/internal/pkg/event"
-	"duck/internal/services"
+	"bbs-go/internal/pkg/event"
+	"bbs-go/internal/services"
 	"reflect"
 )
 

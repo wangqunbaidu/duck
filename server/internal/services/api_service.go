@@ -1,9 +1,9 @@
 package services
 
 import (
-	"duck/internal/models"
-	"duck/internal/models/dto"
-	"duck/internal/repositories"
+	"bbs-go/internal/models"
+	"bbs-go/internal/models/dto"
+	"bbs-go/internal/repositories"
 	"log/slog"
 
 	"github.com/mlogclub/simple/common/dates"

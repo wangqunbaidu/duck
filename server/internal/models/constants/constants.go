@@ -5,7 +5,7 @@ const (
 	SummaryLen                   = 256 // 摘要长度
 	UploadMaxM                   = 10
 	UploadMaxBytes         int64 = 1024 * 1024 * 1024 * UploadMaxM
-	CookieTokenKey               = "duck_token"
+	CookieTokenKey               = "bbsgo_token"
 )
 
 // 系统配置
@@ -78,17 +78,12 @@ const (
 )
 
 // 内容类型
-const (
-	ContentTypeHtml     = "html"
-	ContentTypeMarkdown = "markdown"
-	ContentTypeText     = "text"
-)
+type ContentType string
 
-// 第三方账号类型
 const (
-	ThirdAccountTypeGithub = "github"
-	ThirdAccountTypeOSC    = "osc"
-	ThirdAccountTypeQQ     = "qq"
+	ContentTypeHtml     ContentType = "html"
+	ContentTypeMarkdown ContentType = "markdown"
+	ContentTypeText     ContentType = "text"
 )
 
 // 积分操作类型
@@ -102,14 +97,6 @@ type TopicType int
 const (
 	TopicTypeTopic TopicType = 0
 	TopicTypeTweet TopicType = 1
-)
-
-type LoginMethod string
-
-const (
-	LoginMethodQQ       LoginMethod = "qq"
-	LoginMethodGithub   LoginMethod = "github"
-	LoginMethodPassword LoginMethod = "password"
 )
 
 const (

@@ -1,10 +1,10 @@
 package server
 
 import (
-	"duck/internal/controllers/admin"
-	"duck/internal/controllers/api"
-	"duck/internal/middleware"
-	"duck/internal/pkg/config"
+	"bbs-go/internal/controllers/admin"
+	"bbs-go/internal/controllers/api"
+	"bbs-go/internal/middleware"
+	"bbs-go/internal/pkg/config"
 	"log/slog"
 	"os"
 	"strings"
@@ -47,7 +47,7 @@ func NewServer() {
 
 	app.Any("/", func(i iris.Context) {
 		_ = i.JSON(map[string]interface{}{
-			"engine": "duck",
+			"engine": "bbs-go",
 		})
 	})
 

@@ -1,7 +1,7 @@
 package event
 
 import (
-	"duck/internal/models"
+	"bbs-go/internal/models"
 	"fmt"
 	"reflect"
 	"testing"

@@ -1,11 +1,12 @@
 package search
 
 import (
-	"duck/internal/cache"
-	"duck/internal/models"
-	html2 "duck/internal/pkg/html"
-	"duck/internal/pkg/markdown"
-	"duck/internal/repositories"
+	"bbs-go/internal/cache"
+	"bbs-go/internal/models"
+	"bbs-go/internal/pkg/config"
+	html2 "bbs-go/internal/pkg/html"
+	"bbs-go/internal/pkg/markdown"
+	"bbs-go/internal/repositories"
 	"html"
 	"log/slog"
 	"math"
@@ -21,8 +22,9 @@ import (
 
 var index bleve.Index
 
-func Init(indexPath string) {
+func Init() {
 	var err error
+	indexPath := config.Instance.Search.IndexPath
 	if index, err = bleve.Open(indexPath); err != nil {
 		if err == bleve.ErrorIndexPathDoesNotExist {
 			index = newIndex(indexPath)

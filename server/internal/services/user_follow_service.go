@@ -1,11 +1,11 @@
 package services
 
 import (
-	"duck/internal/cache"
-	"duck/internal/models"
-	"duck/internal/models/constants"
-	"duck/internal/pkg/event"
-	"duck/internal/repositories"
+	"bbs-go/internal/cache"
+	"bbs-go/internal/models"
+	"bbs-go/internal/models/constants"
+	"bbs-go/internal/pkg/event"
+	"bbs-go/internal/repositories"
 
 	"github.com/emirpasic/gods/sets/hashset"
 	"github.com/mlogclub/simple/common/dates"

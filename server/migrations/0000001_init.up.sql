@@ -1,6 +1,6 @@
 -- 初始化用户数据（用户名：admin、密码：123456）
 INSERT INTO `t_user` (`id`, `type`, `username`, `email`, `email_verified`, `nickname`, `avatar`, `gender`, `birthday`, `background_image`, `password`, `home_page`, `description`, `score`, `status`, `topic_count`, `comment_count`, `follow_count`, `fans_count`, `roles`, `forbidden_end_time`, `create_time`, `update_time`) VALUES
-(1, 0, 'admin', 'a@example.com', 0, 'duck站长', '', '', NULL, NULL, '$2a$10$ofA39bAFMpYpIX/Xiz7jtOMH9JnPvYfPRlzHXqAtLPFpbE/cLdjmS', NULL, '轻轻地我走了，正如我轻轻的来。', 0, 0, 0, 0, 0, 0, 'owner', 0, (UNIX_TIMESTAMP(now()) * 1000), (UNIX_TIMESTAMP(now()) * 1000));
+(1, 0, 'admin', 'a@example.com', 0, 'bbsgo站长', '', '', NULL, NULL, '$2a$10$ofA39bAFMpYpIX/Xiz7jtOMH9JnPvYfPRlzHXqAtLPFpbE/cLdjmS', NULL, '轻轻地我走了，正如我轻轻的来。', 0, 0, 0, 0, 0, 0, 'owner', 0, (UNIX_TIMESTAMP(now()) * 1000), (UNIX_TIMESTAMP(now()) * 1000));
 
 -- 初始化角色数据
 INSERT INTO `t_role` (`id`, `type`, `name`, `code`, `sort_no`, `remark`, `status`, `create_time`, `update_time`) VALUES
@@ -17,9 +17,9 @@ INSERT INTO `t_topic_node` (`id`, `name`, `description`, `logo`, `sort_no`, `sta
 
 -- 初始化系统配置数据
 INSERT INTO `t_sys_config` (`id`, `key`, `value`, `name`, `description`, `create_time`, `update_time`) VALUES
-(1, 'siteTitle', 'duck演示站', '站点标题', '站点标题', (UNIX_TIMESTAMP(now()) * 1000), (UNIX_TIMESTAMP(now()) * 1000)),
-(2, 'siteDescription', 'duck，基于Go语言的开源社区系统', '站点描述', '站点描述', (UNIX_TIMESTAMP(now()) * 1000), (UNIX_TIMESTAMP(now()) * 1000)),
-(3, 'siteKeywords', '[\"duck\"]', '站点关键字', '站点关键字', (UNIX_TIMESTAMP(now()) * 1000), (UNIX_TIMESTAMP(now()) * 1000)),
+(1, 'siteTitle', 'bbs-go演示站', '站点标题', '站点标题', (UNIX_TIMESTAMP(now()) * 1000), (UNIX_TIMESTAMP(now()) * 1000)),
+(2, 'siteDescription', 'bbs-go，基于Go语言的开源社区系统', '站点描述', '站点描述', (UNIX_TIMESTAMP(now()) * 1000), (UNIX_TIMESTAMP(now()) * 1000)),
+(3, 'siteKeywords', '[\"bbs-go\"]', '站点关键字', '站点关键字', (UNIX_TIMESTAMP(now()) * 1000), (UNIX_TIMESTAMP(now()) * 1000)),
 (4, 'siteNavs', '[{\"title\":\"首页\",\"url\":\"/\"},{\"title\":\"话题\",\"url\":\"/topics\"},{\"title\":\"文章\",\"url\":\"/articles\"}]', '站点导航', '站点导航', (UNIX_TIMESTAMP(now()) * 1000), (UNIX_TIMESTAMP(now()) * 1000)),
 (5, 'defaultNodeId', '1', '默认节点', '默认节点', (UNIX_TIMESTAMP(now()) * 1000), (UNIX_TIMESTAMP(now()) * 1000)),
 (6, 'tokenExpireDays', '365', '用户登录有效期(天)', '用户登录有效期(天)', (UNIX_TIMESTAMP(now()) * 1000), (UNIX_TIMESTAMP(now()) * 1000)),

@@ -4,7 +4,7 @@ import (
 	"github.com/kataras/iris/v12"
 	"github.com/mlogclub/simple/web"
 
-	"duck/internal/services"
+	"bbs-go/internal/services"
 )
 
 type ConfigController struct {

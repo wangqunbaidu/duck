@@ -1,18 +1,18 @@
 package admin
 
 import (
-	"duck/internal/models/constants"
-	"duck/internal/pkg/errs"
+	"bbs-go/internal/models/constants"
+	"bbs-go/internal/pkg/errs"
 	"strconv"
 
-	"duck/internal/models"
+	"bbs-go/internal/models"
 
 	"github.com/kataras/iris/v12"
 	"github.com/mlogclub/simple/sqls"
 	"github.com/mlogclub/simple/web"
 	"github.com/mlogclub/simple/web/params"
 
-	"duck/internal/services"
+	"bbs-go/internal/services"
 )
 
 type UserController struct {

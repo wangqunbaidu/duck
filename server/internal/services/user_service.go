@@ -1,11 +1,12 @@
 package services
 
 import (
-	"duck/internal/models/constants"
-	"duck/internal/pkg/bbsurls"
-	"duck/internal/pkg/email"
-	"duck/internal/pkg/errs"
-	"duck/internal/pkg/validate"
+	"bbs-go/internal/models/constants"
+	"bbs-go/internal/models/dto"
+	"bbs-go/internal/pkg/bbsurls"
+	"bbs-go/internal/pkg/email"
+	"bbs-go/internal/pkg/errs"
+	"bbs-go/internal/pkg/validate"
 	"errors"
 	"log/slog"
 	"net/http"
@@ -21,10 +22,10 @@ import (
 	"github.com/mlogclub/simple/web/params"
 	"gorm.io/gorm"
 
-	"duck/internal/cache"
+	"bbs-go/internal/cache"
 
-	"duck/internal/models"
-	"duck/internal/repositories"
+	"bbs-go/internal/models"
+	"bbs-go/internal/repositories"
 )
 
 // 邮箱验证邮件有效期（小时）
@@ -449,24 +450,32 @@ func (s *userService) SendEmailVerifyEmail(userId int64) error {
 	}
 	// 如果设置了邮箱白名单
 	if emailWhitelist := SysConfigService.GetEmailWhitelist(); len(emailWhitelist) > 0 {
-		isInWhitelist := false
-		for _, whitelist := range emailWhitelist {
-			if strings.Contains(strings.ToLower(user.Email.String), strings.ToLower(whitelist)) {
-				isInWhitelist = true
-				break
+		isInWhitelist := func() bool {
+			for _, whitelist := range emailWhitelist {
+				if strings.Contains(strings.ToLower(user.Email.String), strings.ToLower(whitelist)) {
+					return true
+				}
 			}
-		}
+			return false
+		}()
+
 		if !isInWhitelist {
-			// 直接返回，也不抛出异常了，就是不发邮件
-			slog.Error("不支持使用该邮箱进行验证.", slog.String("email", user.Email.String))
-			return errors.New("不支持该类型邮箱")
+			suffix := func() string {
+				email := strings.ToLower(user.Email.String)
+				index := strings.Index(email, "@")
+				if index != -1 {
+					return email[index+1:]
+				}
+				return email
+			}()
+			return errors.New("不支持该该邮箱后缀: " + suffix)
 		}
 	}
 	var (
 		token     = strs.UUID()
 		url       = bbsurls.AbsUrl("/user/email/verify?token=" + token)
-		link      = &models.ActionLink{Title: "点击这里验证邮箱>>", Url: url}
-		siteTitle = cache.SysConfigCache.GetValue(constants.SysConfigSiteTitle)
+		link      = &dto.ActionLink{Title: "点击这里验证邮箱>>", Url: url}
+		siteTitle = cache.SysConfigCache.GetStr(constants.SysConfigSiteTitle)
 		subject   = "邮箱验证 - " + siteTitle
 		title     = "邮箱验证 - " + siteTitle
 		content   = "该邮件用于验证你在 " + siteTitle + " 中设置邮箱的正确性，请在" + strconv.Itoa(emailVerifyExpireHour) + "小时内完成验证。验证链接：" + url
@@ -530,7 +539,7 @@ func (s *userService) CheckPostStatus(user *models.User) error {
 	if user.IsForbidden() {
 		return errs.ForbiddenError
 	}
-	observeSeconds := SysConfigService.GetInt(constants.SysConfigUserObserveSeconds, 0)
+	observeSeconds := cache.SysConfigCache.GetInt(constants.SysConfigUserObserveSeconds)
 	if user.InObservationPeriod(observeSeconds) {
 		return web.NewError(errs.InObservationPeriod.Code, "账号尚在观察期，观察期时长："+strconv.Itoa(observeSeconds)+"秒，请稍后再试")
 	}

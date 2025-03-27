@@ -1,9 +1,9 @@
 package api
 
 import (
-	"duck/internal/cache"
-	"duck/internal/controllers/render"
-	"duck/internal/services"
+	"bbs-go/internal/cache"
+	"bbs-go/internal/controllers/render"
+	"bbs-go/internal/services"
 	"time"
 
 	"github.com/kataras/iris/v12"

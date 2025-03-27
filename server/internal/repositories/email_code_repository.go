@@ -1,7 +1,7 @@
 package repositories
 
 import (
-	"duck/internal/models"
+	"bbs-go/internal/models"
 
 	"github.com/mlogclub/simple/sqls"
 	"github.com/mlogclub/simple/web/params"

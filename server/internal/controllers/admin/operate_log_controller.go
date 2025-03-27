@@ -1,7 +1,7 @@
 package admin
 
 import (
-	"duck/internal/services"
+	"bbs-go/internal/services"
 	"strconv"
 
 	"github.com/kataras/iris/v12"

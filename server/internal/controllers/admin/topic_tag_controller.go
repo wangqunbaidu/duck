@@ -7,8 +7,8 @@ import (
 	"github.com/mlogclub/simple/web"
 	"github.com/mlogclub/simple/web/params"
 
-	"duck/internal/models"
-	"duck/internal/services"
+	"bbs-go/internal/models"
+	"bbs-go/internal/services"
 )
 
 type TopicTagController struct {

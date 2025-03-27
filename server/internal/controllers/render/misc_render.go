@@ -1,8 +1,8 @@
 package render
 
 import (
-	"duck/internal/models/constants"
-	"duck/internal/pkg/bbsurls"
+	"bbs-go/internal/models/constants"
+	"bbs-go/internal/pkg/bbsurls"
 	"strings"
 	"time"
 
@@ -15,8 +15,8 @@ import (
 	"github.com/mlogclub/simple/common/urls"
 	"github.com/mlogclub/simple/web"
 
-	"duck/internal/models"
-	"duck/internal/services"
+	"bbs-go/internal/models"
+	"bbs-go/internal/services"
 )
 
 func xssProtection(htmlContent string) string {
@@ -94,6 +94,9 @@ Parameter:
 	redirect - 登录来源地址，需要控制登录成功之后跳转到该地址
 */
 func BuildLoginSuccess(ctx iris.Context, user *models.User, redirect string) *web.JsonResult {
+	if user == nil || user.Status != constants.StatusOk {
+		return web.JsonErrorMsg("用户不存在或已被禁用")
+	}
 	token, err := services.UserTokenService.Generate(user.Id)
 	if err != nil {
 		return web.JsonError(err)

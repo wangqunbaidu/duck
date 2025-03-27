@@ -1,10 +1,10 @@
 package api
 
 import (
-	"duck/internal/models/constants"
-	"duck/internal/pkg/bbsurls"
-	"duck/internal/pkg/errs"
-	"duck/internal/spam"
+	"bbs-go/internal/models/constants"
+	"bbs-go/internal/pkg/bbsurls"
+	"bbs-go/internal/pkg/errs"
+	"bbs-go/internal/spam"
 	"log/slog"
 	"strconv"
 
@@ -16,9 +16,9 @@ import (
 	"github.com/panjf2000/ants/v2"
 	"github.com/sirupsen/logrus"
 
-	"duck/internal/controllers/render"
-	"duck/internal/models"
-	"duck/internal/services"
+	"bbs-go/internal/controllers/render"
+	"bbs-go/internal/models"
+	"bbs-go/internal/services"
 )
 
 type ArticleController struct {

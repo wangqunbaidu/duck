@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"duck/internal/pkg/config"
+	"bbs-go/internal/pkg/config"
 )
 
 // 是否是内部链接

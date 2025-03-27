@@ -4,8 +4,8 @@ import (
 	"errors"
 	"time"
 
-	"duck/internal/models"
-	"duck/internal/repositories"
+	"bbs-go/internal/models"
+	"bbs-go/internal/repositories"
 
 	"github.com/goburrow/cache"
 	"github.com/mlogclub/simple/common/dates"

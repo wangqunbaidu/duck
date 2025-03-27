@@ -1,7 +1,7 @@
 package admin
 
 import (
-	"duck/internal/models/constants"
+	"bbs-go/internal/models/constants"
 	"strconv"
 	"strings"
 
@@ -11,9 +11,9 @@ import (
 	"github.com/mlogclub/simple/web"
 	"github.com/mlogclub/simple/web/params"
 
-	"duck/internal/controllers/render"
-	"duck/internal/models"
-	"duck/internal/services"
+	"bbs-go/internal/controllers/render"
+	"bbs-go/internal/models"
+	"bbs-go/internal/services"
 )
 
 type TagController struct {

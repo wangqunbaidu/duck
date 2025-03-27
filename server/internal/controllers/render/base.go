@@ -1,7 +1,7 @@
 package render
 
 import (
-	"duck/internal/models"
+	"bbs-go/internal/models"
 	"log/slog"
 
 	"github.com/mlogclub/simple/common/jsons"

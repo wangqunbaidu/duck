@@ -1,13 +1,13 @@
 package render
 
 import (
-	"duck/internal/cache"
-	"duck/internal/models"
-	"duck/internal/models/constants"
-	"duck/internal/pkg/html"
-	"duck/internal/pkg/markdown"
-	"duck/internal/pkg/text"
-	"duck/internal/services"
+	"bbs-go/internal/cache"
+	"bbs-go/internal/models"
+	"bbs-go/internal/models/constants"
+	"bbs-go/internal/pkg/html"
+	"bbs-go/internal/pkg/markdown"
+	"bbs-go/internal/pkg/text"
+	"bbs-go/internal/services"
 )
 
 func BuildArticle(article *models.Article, currentUser *models.User) *models.ArticleResponse {

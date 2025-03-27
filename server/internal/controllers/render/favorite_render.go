@@ -1,12 +1,12 @@
 package render
 
 import (
-	"duck/internal/models"
-	"duck/internal/models/constants"
-	"duck/internal/pkg/bbsurls"
-	"duck/internal/pkg/common"
-	"duck/internal/pkg/text"
-	"duck/internal/services"
+	"bbs-go/internal/models"
+	"bbs-go/internal/models/constants"
+	"bbs-go/internal/pkg/bbsurls"
+	"bbs-go/internal/pkg/common"
+	"bbs-go/internal/pkg/text"
+	"bbs-go/internal/services"
 	"strings"
 
 	"github.com/PuerkitoBio/goquery"

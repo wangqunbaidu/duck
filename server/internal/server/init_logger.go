@@ -1,7 +1,7 @@
 package server
 
 import (
-	"duck/internal/pkg/config"
+	"bbs-go/internal/pkg/config"
 	"fmt"
 	"io"
 	"log/slog"

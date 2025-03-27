@@ -1,8 +1,8 @@
 package services
 
 import (
-	"duck/internal/models/constants"
-	"duck/internal/pkg/event"
+	"bbs-go/internal/models/constants"
+	"bbs-go/internal/pkg/event"
 	"errors"
 
 	"github.com/mlogclub/simple/common/dates"
@@ -10,8 +10,8 @@ import (
 	"github.com/mlogclub/simple/web/params"
 	"gorm.io/gorm"
 
-	"duck/internal/models"
-	"duck/internal/repositories"
+	"bbs-go/internal/models"
+	"bbs-go/internal/repositories"
 )
 
 var UserLikeService = newUserLikeService()

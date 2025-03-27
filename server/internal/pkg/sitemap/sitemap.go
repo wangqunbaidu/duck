@@ -1,9 +1,9 @@
 package sitemap
 
 import (
-	"duck/internal/models/constants"
-	"duck/internal/pkg/bbsurls"
-	"duck/internal/pkg/uploader"
+	"bbs-go/internal/models/constants"
+	"bbs-go/internal/pkg/bbsurls"
+	"bbs-go/internal/pkg/uploader"
 	"bytes"
 	"compress/gzip"
 	"log/slog"
@@ -13,9 +13,9 @@ import (
 	"github.com/ikeikeikeike/go-sitemap-generator/v2/stm"
 	"github.com/mlogclub/simple/common/dates"
 
-	"duck/internal/models"
-	"duck/internal/pkg/config"
-	"duck/internal/services"
+	"bbs-go/internal/models"
+	"bbs-go/internal/pkg/config"
+	"bbs-go/internal/services"
 )
 
 const (

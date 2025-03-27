@@ -1,6 +1,6 @@
 package spam
 
-import "duck/internal/models"
+import "bbs-go/internal/models"
 
 type Strategy interface {
 	// Name 策略名称

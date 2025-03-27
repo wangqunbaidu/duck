@@ -1,12 +1,12 @@
 package uploader
 
 import (
-	"duck/internal/pkg/bbsurls"
+	"bbs-go/internal/pkg/bbsurls"
 	"io/ioutil"
 	"os"
 	"path/filepath"
 
-	"duck/internal/pkg/config"
+	"bbs-go/internal/pkg/config"
 )
 
 // 本地文件系统

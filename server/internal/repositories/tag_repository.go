@@ -1,7 +1,7 @@
 package repositories
 
 import (
-	"duck/internal/models/constants"
+	"bbs-go/internal/models/constants"
 	"errors"
 	"strings"
 
@@ -10,7 +10,7 @@ import (
 	"github.com/mlogclub/simple/web/params"
 	"gorm.io/gorm"
 
-	"duck/internal/models"
+	"bbs-go/internal/models"
 )
 
 var TagRepository = newTagRepository()

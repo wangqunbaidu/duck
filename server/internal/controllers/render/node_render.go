@@ -1,6 +1,6 @@
 package render
 
-import "duck/internal/models"
+import "bbs-go/internal/models"
 
 func BuildNode(node *models.TopicNode) *models.NodeResponse {
 	if node == nil {
