@@ -104,7 +104,7 @@ async function refreshCaptcha() {
       });
     });
     form.captchaId = captcha.value.captchaId;
-    form.captchaUrl = `data:image/jpeg;base64, ${captcha.value.captchaUrl}`;
+    form.captchaUrl = `data:image/jpeg;base64, ${captcha.value.captchaBase64}`;
     form.captchaCode = "";
   } catch (e) {
     useCatchError(e);
