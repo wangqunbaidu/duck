@@ -60,14 +60,14 @@ async function follow() {
 .follow-btn {
   font-size: 12px;
   height: 25px;
-  background-color: #020303; // TODO
-  border-color: #000000;
+  background-color: #000; // TODO
+  border-color: #2000;
   color: var(--text-color5);
 
   &:hover,
   &.is-followed {
-    background-color: #020303; // TODO
-    border-color: #000000;
+    background-color: #000; // TODO
+    border-color: #000;
   }
   i {
     font-size: 12px;

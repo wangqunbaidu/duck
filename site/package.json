@@ -15,11 +15,13 @@
     "@nuxt/devtools": "latest",
     "@nuxtjs/color-mode": "3.4.2",
     "@nuxtjs/eslint-module": "4.1.0",
+    "@types/mockjs": "^1.0.10",
     "@vueuse/core": "10.11.0",
     "@vueuse/nuxt": "10.11.0",
     "bulma": "1.0.1",
     "element-plus": "2.7.7",
     "eslint": "8.56.0",
+    "mockjs": "^1.1.0",
     "nuxt": "3.12.3",
     "sass": "1.70.0",
     "typescript": "5.5.3"

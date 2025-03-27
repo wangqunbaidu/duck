@@ -195,8 +195,8 @@ export default {
         .topic-sticky-icon {
           font-size: 13px;
           line-height: 13px;
-          color: #ff7827;
-          background: #ffe7d9;
+          color: #fff;
+          background: #ea1057;
           border-radius: 2px;
           padding: 3px 6px;
           white-space: nowrap;

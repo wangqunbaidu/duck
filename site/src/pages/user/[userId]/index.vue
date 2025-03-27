@@ -4,7 +4,7 @@
       <user-profile :user="user" />
 
       <div class="container main-container right-main size-320">
-        <user-center-sidebar :user="user" />
+        <!-- <user-center-sidebar :user="user" /> -->
         <div class="right-container">
           <div class="tabs-warp">
             <div class="tabs">
@@ -25,6 +25,14 @@
                     <span>文章</span>
                   </nuxt-link>
                 </li>
+                <!-- <li :class="{ 'is-active': activeTab === 'game' }">
+                  <nuxt-link :to="'/user/' + user.id">
+                    <span class="icon is-small">
+                      <i class="iconfont icon-game" aria-hidden="true" />
+                    </span>
+                    <span>游戏</span>
+                  </nuxt-link>
+                </li> -->
               </ul>
             </div>
 

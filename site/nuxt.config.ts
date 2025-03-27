@@ -70,7 +70,6 @@ export default defineNuxtConfig({
       // ]
     },
   },
-
   css: [
     '~/assets/css/index.scss',
   ],
@@ -86,5 +85,5 @@ export default defineNuxtConfig({
     },
   },
 
-  compatibilityDate: '2025-09-15',
+  compatibilityDate: '2025-03-15',
 })

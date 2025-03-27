@@ -222,7 +222,7 @@ async function showCaptcha() {
         },
       });
       postForm.value.captchaId = ret.captchaId;
-      postForm.value.captchaUrl = ret.captchaUrl;
+      postForm.value.captchaUrl = `data:image/jpeg;base64, ${ret.captchaBase64}`;
     } catch (e) {
       useMsgError(e.message || e);
     }

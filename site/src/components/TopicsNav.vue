@@ -61,8 +61,8 @@ function nodeUrl(node) {
 [data-theme="light"],
 .theme-light {
   --topics-nav-color1: #f7f9ff;
-  --topics-nav-color2: rgba(43, 89, 255, 0.06);
-  --topics-nav-color3: #fff7f7;
+  --topics-nav-color2: rgba(215, 216, 219, 0.06);
+  --topics-nav-color3: #efecec;
 }
 
 [data-theme="dark"],

@@ -12,7 +12,7 @@
       </div>
       <div class="has-more">
         <button
-          class="button is-primary is-small"
+          class="button is-small"
           :disabled="disabled"
           @click="loadMore"
         >

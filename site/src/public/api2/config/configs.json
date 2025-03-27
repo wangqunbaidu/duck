@@ -1,0 +1,100 @@
+{
+  "errorCode": 0,
+  "message": "",
+  "data": {
+      "siteTitle": "BBSGO交流站",
+      "siteDescription": "BBSGO交流站 - Go语言中文社区 - 程序员编程资料和编程经验分享平台",
+      "siteKeywords": [
+          "Go中国",
+          "Go语言",
+          "Go论坛",
+          "gobbs",
+          "Go语言中国",
+          "Golang中国",
+          "码农俱乐部",
+          "Golang开发",
+          "bbs-go",
+          "bbsgo"
+      ],
+      "siteLogo": "",
+      "siteNavs": [
+          {
+              "title": "话题",
+              "url": "/topics"
+          },
+          {
+              "title": "文章",
+              "url": "/articles"
+          },
+          {
+              "title": "BBS-GO",
+              "url": "https://bbs-go.com"
+          },
+          {
+              "title": "GitHub",
+              "url": "https://github.com/mlogclub/bbs-go"
+          },
+          {
+              "title": "Gitee",
+              "url": "https://gitee.com/mlogclub/bbs-go"
+          }
+      ],
+      "siteNotification": "欢迎访问<strong>&nbsp;BBS-GO交流社区</strong>&nbsp;\n<a href=\"/user/profile/account\"><strong>点击这里设置您的邮箱</strong></a>&nbsp;\n可以接收站内跟帖、回复邮件提醒，不错过任何一条消息。\n\n<!--\n<div style=\"padding-top: 10px;text-align: center;\">\n\n    <span style=\"font-size: 13px;font-weight:700;color: red;\">关注公众号订阅更多技术干货！</span>\n    <img src=\"https://open.weixin.qq.com/qr/code?username=gh_950827012b8d\" alt=\"码农俱乐部\" />\n\n    <img src=\"https://file.mlog.club/mlog.club/qq_qrcode.png\" />\n</div>\n-->",
+      "recommendTags": [
+          "Go语言",
+          "Java",
+          "Python",
+          "JavaScript",
+          "分享"
+      ],
+      "urlRedirect": false,
+      "scoreConfig": {
+          "postTopicScore": 10,
+          "postCommentScore": 2,
+          "checkInScore": 1
+      },
+      "defaultNodeId": 1,
+      "articlePending": true,
+      "topicCaptcha": true,
+      "userObserveSeconds": 0,
+      "tokenExpireDays": 365,
+      "createTopicEmailVerified": false,
+      "createArticleEmailVerified": false,
+      "createCommentEmailVerified": false,
+      "enableHideContent": false,
+      "modules": {
+          "tweet": true,
+          "topic": true,
+          "article": true
+      },
+      "emailWhitelist": [
+          "@163.qq.com",
+          "@126.com",
+          "@qq.com",
+          "@foxmail.com",
+          "@gmail.com",
+          "@hotmail.com"
+      ],
+      "loginConfig": {
+          "passwordLogin": {
+              "enabled": true
+          },
+          "weixinLogin": {
+              "enabled": true,
+              "appId": "wxba41220d79513f99",
+              "appSecret": "66afe0c20b54e92af1cb925512ae645b"
+          },
+          "smsLogin": {
+              "enabled": false,
+              "platform": "",
+              "aliyun": {
+                  "accessKeyId": "",
+                  "accessKeySecret": "",
+                  "signName": "",
+                  "templateCode": ""
+              }
+          }
+      }
+  },
+  "success": true
+}
