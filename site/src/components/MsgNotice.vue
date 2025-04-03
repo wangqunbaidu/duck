@@ -29,7 +29,7 @@ messages.value = data.value.messages || [];
     font-size: 15px;
     color: var(--text-color);
 
-    display: flex;
+    display: block;
     align-items: center;
     column-gap: 6px;
 

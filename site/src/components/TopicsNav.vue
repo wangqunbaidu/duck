@@ -75,16 +75,17 @@ function nodeUrl(node) {
 <style lang="scss" scoped>
 .dock-nav {
   display: block;
-  position: -webkit-sticky;
-  position: sticky;
+  // position: -webkit-sticky;
+  // position: sticky;
   top: calc(52px + 1rem);
 
-  width: 180px;
+  // width: 180px;
   border-radius: 12px;
   background-color: var(--bg-color);
   transition: all 0.2s linear;
 
   ul {
+    display: flex;
     padding: 16px 0;
 
     li {
@@ -115,11 +116,11 @@ function nodeUrl(node) {
       }
 
       &.active {
-        background-color: var(--topics-nav-color3);
+        border-bottom: 2px solid #080808;
       }
 
       a {
-        padding: 12px 24px;
+        padding: 5px;
         position: relative;
         z-index: 2;
         display: flex;

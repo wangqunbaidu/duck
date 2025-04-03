@@ -1,13 +1,17 @@
 <template>
   <section class="main">
-    
     <div class="container main-container">
-      
-      
       <div class="main-content no-padding no-bg topics-wrapper">
+        <div class="topics-nav">
+          <!-- <topics-nav /> -->
+           <navs />
+        </div>
         <div class="topics-main">
           <topics-nav />
-        
+          <!-- <div class="topics-main-header">
+            <div>全部帖子</div>
+            <div></div>
+          </div> -->
           <load-more-async v-slot="{ results }" url="/api/topic/topics">
             <topic-list :topics="results" show-sticky />
           </load-more-async>
@@ -21,10 +25,6 @@
 useHead({
   title: useSiteTitle(),
 });
-
-
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

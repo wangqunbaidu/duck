@@ -437,7 +437,10 @@ code {
     border-radius: 0;
   }
 }
-
+.button.btn-duck {
+  background-color: black;
+  color: #fff;
+}
 .v-md-editor__preview-wrapper {
   color: #000;
 }

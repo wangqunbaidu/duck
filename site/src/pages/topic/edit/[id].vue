@@ -61,7 +61,7 @@
               v-if="publishing"
               :class="{ 'is-loading': publishing }"
               disabled
-              class="button is-success"
+              class="button is-success btn-duck"
               >提交更改</a
             >
             <a

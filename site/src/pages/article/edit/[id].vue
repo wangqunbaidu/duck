@@ -61,13 +61,13 @@
               v-if="publishing"
               :class="{ 'is-loading': publishing }"
               disabled
-              class="button is-success"
+              class="button is-success btn-duck"
               >提交更改</a
             >
             <a
               v-else
               :class="{ 'is-loading': publishing }"
-              class="button is-success"
+              class="button is-success btn-duck"
               @click="submitCreate"
               >提交更改</a
             >

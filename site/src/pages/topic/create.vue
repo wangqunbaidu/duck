@@ -106,7 +106,7 @@
           <div class="control">
             <a
               :class="{ 'is-loading': publishing }"
-              class="button is-success"
+              class="button is-success btn-duck"
               @click="createTopic"
               >{{ postForm.type === 1 ? "发表动态" : "发表帖子" }}</a
             >

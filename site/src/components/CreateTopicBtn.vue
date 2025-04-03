@@ -1,7 +1,7 @@
 <template>
   <!-- <client-only> -->
   <el-dropdown placement="bottom" trigger="click" @command="handlePostCommand">
-    <el-button type="primary" :icon="Plus"> 发表 </el-button>
+    <el-button class="pub" type="primary" :icon="Plus"> 发表 </el-button>
     <template #dropdown>
       <el-dropdown-menu>
         <el-dropdown-item
@@ -51,4 +51,8 @@ function handlePostCommand(cmd) {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.pub {
+  background-color: #040202;
+}
+</style>

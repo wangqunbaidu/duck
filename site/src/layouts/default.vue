@@ -9,6 +9,9 @@ export default {
 <template>
   <div>
     <MyHeader />
+
+    <navs />
+
     <slot />
     <MyFooter />
   </div>
